@@ -186,7 +186,7 @@ a {
 
     .content {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         justify-items: center;
         align-items: center;
         background: $main-color;
@@ -200,8 +200,8 @@ a {
             font-weight: bold;
 
             img {
-                max-width: 100%;
-                width: 112px;
+                max-width: 112px;
+                width: 100%;
                 height: auto;
                 color: white;
             }
